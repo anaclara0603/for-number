@@ -1,0 +1,12 @@
+<script>
+
+    const quant  = Number(prompt("informe quantos nomes quer inserir:"))
+    alert(`insira os nomes: `)
+    let listaNome = [];
+
+    for (let contador = 1; contador <= quant; contador++){
+        listaNome.push(prompt(`nome: `));
+
+    }
+    document.write(listaNome.join(", "));
+</script>

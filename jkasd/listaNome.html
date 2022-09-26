@@ -1,3 +1,17 @@
 <script>
-    let listaNome = ["Alberto", "Joao", "Amanda"]
+    let listaNome = ["Alberto", "Joao", "Amanda", "Fabio", "Maria", "Eduardo", "Gabriela"]
+
+    let nomeA = [];
+    let nomeoutros = [];
+
+    for (let nome of listaNome) {
+        if (nome.charAt(0) === "A")
+        nomeA.push(nome);
+        else {
+        nomeoutros.push(nome);
+    }
+    } 
+    document.write(`Nomes com A : ${nomeA.sort().join(", ")}</br>`);
+    document.write(`Demais nomes : ${nomeoutros.sort().join(", ")}`);
+   
 </script>
